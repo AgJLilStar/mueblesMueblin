@@ -1,0 +1,379 @@
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(90deg, rgb(23, 94, 134) 0%, hsla(176, 45%, 66%, 1) 100%);
+    height: 120px;
+}
+
+.entradaTexto{
+    display: flex;
+    position: absolute;
+    height: 35px;
+}
+
+.campoEntrada{
+    border-radius: 8px;
+    width: 40em;
+    height: 2.3em;
+    transition: transform 0.15s;
+}
+
+.campoEntrada:hover{
+    transform: scale(105%);
+    transition: linear 0.3s;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 350px;
+}
+
+.logoMarca{
+    width: 180px;
+    align-items: center;
+    transition: transform 0.5s;
+}
+
+.logoMarca:hover{
+    transform: scale(105%);
+    transition: linear 0.2s;
+    filter:drop-shadow(1px 0.5px 10px #c9edff);
+}
+
+.cuenta{
+    position: relative;
+    display: flex;
+    right: -600px ;
+    gap: 80px;
+}
+
+.inicioSesion, .carrito{
+    display: flex;
+    align-items: center;
+    right: -5px;
+    gap: 5px;
+    padding: 10px;
+}
+.logoUsuario{
+    width: 35px;
+}
+.textoInicio{
+    display: flex;
+    flex-direction: column;
+}
+.palabraInicio{
+    margin: 0;
+}
+.inicioPalabra{
+    text-decoration: none;
+    color: black;
+}
+
+.botonCarrito{
+    width: 35px;
+}
+
+.inicioSesion:hover{
+    background-color: #c9edff;
+    border-radius: 10px;
+    font-size: 17px;
+    transition: linear 0.2s;
+}
+
+.carrito:hover{
+    background-color: #c9edff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    transition: linear 0.2s;
+}
+
+
+nav{
+    background: linear-gradient(5deg, rgb(23, 94, 134) 0%, hsla(176, 45%, 66%, 1) 100%);
+    height: 35px;
+}
+
+nav button,
+nav a{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.botonMenu{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3px;
+    gap: 3px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+.botonMenu:hover{
+    transform: scale(110%);
+    transition:linear 0.2s;
+    cursor:grab;
+    filter:drop-shadow(0px 0px 10px #c9edff);
+}
+
+.botonesNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.botonesNav:hover{
+    transform: scale(107%);
+    transition: linear 0.25s;
+    background-color: #c9edff;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+main{
+    background: linear-gradient(120deg,rgba(88, 171, 219, 0.8) 0%, rgba(135, 222, 173, 0.8) 62%);
+    font-family: "Montserrat", sans-serif;
+}
+
+.interiorMain{
+    max-width: 1350px;
+    height: 2000px;
+    margin: 0 auto;
+    padding: 15px;
+    /*border: 2px solid #000;*/
+}
+
+.promo{
+    display: flex;
+    justify-content: center;
+ }
+
+.fotoPromo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20em;
+    width: 77em;
+    margin-top: 0.em;
+    border-radius: 1em;
+    box-shadow: 2px 2px 0.6em rgba(0,0,0,0.5);
+    transition: linear 0.25s;
+}
+
+.fotoPromo:hover{
+    transform: scale(1.05);
+    transition: linear 0.2s;
+}
+
+.fotoPromo:active{
+    transform: scale(0.97);
+    transition: linear 0.3s;
+}
+
+
+.titulo1{
+    display: flex;
+    width: fit-content;
+    padding: 4px 12px;
+    margin-left: 4.5em;    
+    margin-top: 3em;
+    background-color: #c9edff;
+    border-radius:  2em;
+}
+
+.carrousel1{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.items{
+    max-width: 600px;    
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 2em;
+}
+
+.imagen1, .imagen2{
+    position: relative;
+}
+
+.fotoItem1, .fotoItem2{
+    width: 550px;
+    height: 350px;
+    transition: transform 0.6s;
+}
+.textoItem1, .textoItem2{
+    position: absolute;
+    font-weight: bold;
+    bottom: 0px;
+    left: 200px;
+    text-decoration: none;
+    color: black;
+    background-color: #c9edff;
+    border-radius: 2em;
+    padding: 0.5em;
+}
+
+
+.fotoItem1:hover{
+    transform: scale(120%);
+    transition: linear 0.5s;
+}
+.fotoItem1:hover + .textoItem1{
+    box-shadow: 2px 2px 2.5em white;
+}
+
+.fotoItem2:hover{
+    transform: scale(120%);
+    transition: linear 0.5s;
+}
+.fotoItem2:hover + .textoItem2{
+    box-shadow: 2px 2px 2.5em white;
+}
+
+.redireccionLiving{
+    display: flex;
+    margin-top: -40px;
+}
+
+
+.notacarrouselPagos{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+.fullCarrouselpagos{
+    transition: transform 0.25s;
+}
+
+.fullCarrouselpagos:hover{
+    transform: scale(110%);
+    transition: transform 0.25s;
+    filter: drop-shadow(2px 2px 2px white);
+}
+
+.carrouselPagos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2em;
+    gap: 5em;
+    transform: scale(110%);
+    transition: transform 0.25s;
+}
+
+.logoMp{
+    width: 6.5em;
+    margin-bottom: -0.2em;
+}
+
+.conversionDivisa{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 0em;
+    color: black;
+}
+
+.logoTarjetas{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.5em;
+    color: black;
+}
+
+.carrouselPagos:hover{
+    transform: scale(120%);
+    transition: linear 0.3s;
+}
+
+
+.titulo2{
+    display: flex;
+    width: fit-content;
+    padding: 4px 12px;
+    margin-left: 4.5em;    
+    margin-top: 3em;
+    background-color: #c9edff;
+    border-radius:  2em;
+}
+
+
+footer{
+    background-color: black;
+    margin: 0;
+    padding: 0%;
+    font-family: "Monserrat" , sans-serif;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+}
+
+footer img{
+    width: 40px;
+    height: auto;
+}
+
+.columnasFooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.columnasFooter *{
+    text-align: start;
+    color: white;
+    font-style: italic;
+}
+
+.columna1{
+    display: grid;
+    align-items: center;  
+    gap: 15px;  
+}
+
+.textoFotofooter{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.columna2 ul{
+    display: grid;
+    gap: 15px;
+}
+
+.columna3 ul{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 15px
+}
