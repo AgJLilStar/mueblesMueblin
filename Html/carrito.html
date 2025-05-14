@@ -52,12 +52,15 @@
 
     <main>
         <div class="bordesCarrito">
+
             <div class="divisionCarrito">
 
-                <div class="recuadroCarrito">
+                <section class="recuadroCarrito">
+
                     <table class="tablaCarrito">
                         <thead>
                             <tr>
+                                <th></th>
                                 <th>PRODUCTO</th>
                                 <th>PRECIO</th>
                                 <th>CANTIDAD</th>
@@ -67,28 +70,36 @@
 
                         <tbody>
                             <tr>
-                                <td class="itemsCarrito"><img src="" alt="">Item 1</td>
-                                <td class="itemsCarrito">Precio</td>
-                                <td class="itemsCarrito"><input type="number" class="cantidadElementos" id="cantidadProducto" name="cantidad" min="1" ></td></td>
-                                <td class="itemsCarrito">Subtotal</td>
+                                <td><button id="borrarElemento"><img src="svg/cruz.svg" alt=""></button></td>
+                                <td><img src="fotos/cama.jpg" alt="fotoProducto">Item 1</td>
+                                <td>Precio</td>
+                                <td><input type="number" class="cantidadElementos" id="cantidadProducto" name="cantidad" min="1" ></td></td>
+                                <td>Subtotal</td>
                             </tr>
                             <tr>
-                                <td class="itemsCarrito"><img src="" alt="">Item 1</td>
-                                <td class="itemsCarrito">Precio</td>
-                                <td class="itemsCarrito"><input type="number" class="cantidadElementos" id="cantidadProducto" name="cantidad" min="1" ></td></td>
-                                <td class="itemsCarrito">Subtotal</td>
+                                <td><button id="borrarElemento"><img src="svg/cruz.svg" alt=""></button></td>   
+                                <td><img src="" alt="fotoProducto">Item 1</td>
+                                <td>Precio</td>
+                                <td><input type="number" class="cantidadElementos" id="cantidadProducto" name="cantidad" min="1" ></td></td>
+                                <td>Subtotal</td>
                             </tr>
                             <tr>
-                                <td class="itemsCarrito"><img src="" alt="">Item 1</td>
-                                <td class="itemsCarrito">Precio</td>
-                                <td class="itemsCarrito"><input type="number" class="cantidadElementos" id="cantidadProducto" name="cantidad" min="1" ></td></td>
-                                <td class="itemsCarrito">Subtotal</td>
+                                <td><button id="borrarElemento"><img src="svg/cruz.svg" alt=""></button></td>
+                                <td><img src="" alt="">Item 1</td>
+                                <td>Precio</td>
+                                <td><input type="number" class="cantidadElementos" id="cantidadProducto" name="cantidad" min="1" ></td></td>
+                                <td>Subtotal</td>
                             </tr>
                         </tbody>
+                        
                     </table>
-                </div>
 
-                <div class="recuadroResumen">
+                    <button id="botonVaciarCarro"><img src="svg/trash.svg" alt="Vaciar Carrito" class="logoCesto">Vaciar el carrito</button>
+                
+                </section>
+
+                <section class="recuadroResumen">
+
                     <table class="tablaResumen">
 
                         <tr>
@@ -96,27 +107,30 @@
                         </tr>
 
                         <tr>
-                            <th>Subtotal</th>
-                            <td>10 peso</td>
+                            <th>Subtotal:</th>
+                            <td><p id="subtotalCarrito">10 peso</p></td>
                         </tr>
                         
                         <tr>
                             <th>Envío</th>
                             <td>
                                 <ul>
-                                    <li><input type="checkbox" name="selectorEnvio" id="selectorEnvio">Retiro por sucursal <a href="">Donde nos encuentras?</a></li>
+                                    <li><input type="checkbox" name="selectorEnvio" id="selectorEnvio">Retiro por sucursal <a href="">  Donde nos encuentras?</a></li>
                                     <li><input type="checkbox" name="selectorEnvio" id="selectorEnvio">Envio mediante correo</li>
                                 </ul
                             ></td>
                         </tr>
-
                     </table>
-                </div>
+
+                        <button id="botonPasopago">PROCEDER AL PAGO</button>
+                
+                </section>
 
             </div>
-        </div>
-    </main>
 
+        </div>
+
+    </main>
 
     <footer>
 

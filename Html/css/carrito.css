@@ -18,9 +18,9 @@ h2{
 
 .bordesCarrito{
     max-width: 1200px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: 0 auto;
-    padding-top: 1.5em;
+    padding-top: 3em;
     padding-bottom: 2em ;
 }
 
@@ -30,29 +30,33 @@ h2{
 
 /*TABLA CARRITO*/
 .recuadroCarrito{
-    border: 2px solid white;
+    /* border: 2px solid white;  */
     width: 800px;
 }
 
 .tablaCarrito{
     width: 100%;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     text-align: left;
     border-collapse: collapse;
 }
 
 .tablaCarrito th{
     /*border: 2px solid green;*/
-    line-height: 1em;
+    line-height: 3em;
+    border-bottom: 3px solid lightgray;
+    border-inline-end: 2px  ;
 }
 
 .tablaCarrito td{
     /*border: 2px solid purple;*/
     line-height: 3em;
+    border-bottom: 1.5px solid lightgray;
     min-height: 1em;
-    text-align: ;
 }
-
+.tablaCarrito img{
+    width: 70px;
+}
 .cantidadElementos{
     width: 4em;
 }
@@ -60,14 +64,15 @@ h2{
 .cuadroPago{
     width: 25em;
     height: 35em;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
 }
 
 /*TABLA RESUMEN*/
 .recuadroResumen{
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
     width: 400px;
     height: 500px;
+    margin-left: 2em;
 }
 
 .recuadroResumen h3{
@@ -81,17 +86,63 @@ h2{
 .tablaResumen{
     border-collapse: collapse;
     width: 100%;
+    font-size: large;
 }
 
 .tablaResumen th{
     text-align: left;
-    border: 2px solid brown;
+    /* border: 2px solid brown; */
     width: 100px
 }
 
 .tablaResumen td{
-    border: 2px solid salmon;
+    /* border: 2px solid salmon; */
     text-align: right;
 }
+.tablaResumen li{
+    margin-bottom: 0.7em;
+}
 
+#borrarElemento{
+    background-color: transparent;
+    border: none;
+}
 
+#borrarElemento img{
+    width: 30px;
+    display: flex;
+    margin-top: 1em;
+    filter: invert(100%);
+}
+
+#borrarElemento:hover{
+    transform: scale(120%);
+}
+
+.logoCesto{
+    width: 2.4em;
+}
+
+#botonVaciarCarro{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    margin-top: 1em ;
+    transition: transform 0.2s;
+}
+#botonVaciarCarro:hover{
+    transform: scale(105%);
+    transition: linear 0.2s;
+}  
+
+#botonPasopago{
+    width: 100%;
+    height: 3em;
+    border-radius: 16px;
+    border: none;
+    background-color: #e7f0b3;
+    margin-top: .7em;
+    font-size: medium;
+    cursor:grabbing;
+}
