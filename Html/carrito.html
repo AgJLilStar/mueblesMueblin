@@ -50,37 +50,71 @@
         </div>
     </nav>
 
-
     <main>
-
         <div class="bordesCarrito">
+            <div class="divisionCarrito">
 
-            <h2>Carrito</h2>
+                <div class="recuadroCarrito">
+                    <table class="tablaCarrito">
+                        <thead>
+                            <tr>
+                                <th>PRODUCTO</th>
+                                <th>PRECIO</th>
+                                <th>CANTIDAD</th>
+                                <th>SUBTOTAL</th>
+                            </tr>
+                        </thead>
 
-            <div class="interiorCarrito">
-                <div class="guiaPedido">
-                    <p>Producto</p>
-                    <p>Precio</p>
-                    <p>Cantidad</p>
-                    <p>Subtotal</p>
+                        <tbody>
+                            <tr>
+                                <td class="itemsCarrito"><img src="" alt="">Item 1</td>
+                                <td class="itemsCarrito">Precio</td>
+                                <td class="itemsCarrito"><input type="number" class="cantidadElementos" id="cantidadProducto" name="cantidad" min="1" ></td></td>
+                                <td class="itemsCarrito">Subtotal</td>
+                            </tr>
+                            <tr>
+                                <td class="itemsCarrito"><img src="" alt="">Item 1</td>
+                                <td class="itemsCarrito">Precio</td>
+                                <td class="itemsCarrito"><input type="number" class="cantidadElementos" id="cantidadProducto" name="cantidad" min="1" ></td></td>
+                                <td class="itemsCarrito">Subtotal</td>
+                            </tr>
+                            <tr>
+                                <td class="itemsCarrito"><img src="" alt="">Item 1</td>
+                                <td class="itemsCarrito">Precio</td>
+                                <td class="itemsCarrito"><input type="number" class="cantidadElementos" id="cantidadProducto" name="cantidad" min="1" ></td></td>
+                                <td class="itemsCarrito">Subtotal</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
-                <div class="cuadrosProductoPago">
-                    <div class="cuadroProducto">
-                        <img src="" alt="fotoProducto"><a href="">Item 1</a>
-                        <img src="" alt="fotoProducto"><a href="">Item 2</a>
-                        <img src="" alt="fotoProducto"><a href="">Item 3</a>
-                        <img src="" alt="fotoProducto"><a href="">Item 4</a>
-                        <img src="" alt="fotoProducto"><a href="">Item 5</a>
-                        <img src="" alt="fotoProducto"><a href="">Item 6</a>
-                    </div>
-                    <div class="cuadroPago">
-                        AQUI VA EL PAGO
-                    </div>
+                <div class="recuadroResumen">
+                    <table class="tablaResumen">
+
+                        <tr>
+                            <h3>Resumen</h3>
+                        </tr>
+
+                        <tr>
+                            <th>Subtotal</th>
+                            <td>10 peso</td>
+                        </tr>
+                        
+                        <tr>
+                            <th>Envío</th>
+                            <td>
+                                <ul>
+                                    <li><input type="checkbox" name="selectorEnvio" id="selectorEnvio">Retiro por sucursal <a href="">Donde nos encuentras?</a></li>
+                                    <li><input type="checkbox" name="selectorEnvio" id="selectorEnvio">Envio mediante correo</li>
+                                </ul
+                            ></td>
+                        </tr>
+
+                    </table>
                 </div>
+
             </div>
         </div>
- 
     </main>
 
 

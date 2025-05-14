@@ -1,63 +1,97 @@
-body{
+body, html{
     margin: 0;
+    height: 100%;
 }
 
 main{   
     background: linear-gradient(120deg,rgba(88, 171, 219, 0.8) 0%, rgba(135, 222, 173, 0.8) 62%);
     font-family: "Montserrat", sans-serif;
     height: auto;
+    height: 100%;
 }
 
 h2{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 0;
 }
 
 .bordesCarrito{
     max-width: 1200px;
     border: 2px solid black;
-    padding: 15px;
     margin: 0 auto;
+    padding-top: 1.5em;
+    padding-bottom: 2em ;
 }
 
-.interiorCarrito{
-    position: relative;
-    margin-top: 1em;
+.divisionCarrito{
     display: flex;
-    flex-direction: column;
 }
 
-.cuadrosProductoPago{
-    border: 2px solid yellowgreen;
-    display:flex;
-    justify-content: space-between;
-    align-items: flex-start;
+/*TABLA CARRITO*/
+.recuadroCarrito{
+    border: 2px solid white;
+    width: 800px;
 }
 
-.guiaPedido{
-    display: flex;
-    flex-direction: row;
-    gap: 11em;
-    font-style: italic;
-    font-weight: 550;
-    color: rgb(77, 77, 77);
+.tablaCarrito{
+    width: 100%;
+    border: 2px solid pink;
+    text-align: left;
+    border-collapse: collapse;
 }
 
-.cuadroProducto{
-    border: 2px solid red;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
+.tablaCarrito th{
+    /*border: 2px solid green;*/
+    line-height: 1em;
 }
 
-.cuadroProducto img{
-    width: 10px;
-    height: auto;
+.tablaCarrito td{
+    /*border: 2px solid purple;*/
+    line-height: 3em;
+    min-height: 1em;
+    text-align: ;
+}
+
+.cantidadElementos{
+    width: 4em;
 }
 
 .cuadroPago{
     width: 25em;
     height: 35em;
-    
     border: 2px solid orange;
 }
+
+/*TABLA RESUMEN*/
+.recuadroResumen{
+    border: 2px solid greenyellow;
+    width: 400px;
+    height: 500px;
+}
+
+.recuadroResumen h3{
+    text-align: center;
+}
+
+.recuadroResumen li{
+    list-style: none;
+}
+
+.tablaResumen{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tablaResumen th{
+    text-align: left;
+    border: 2px solid brown;
+    width: 100px
+}
+
+.tablaResumen td{
+    border: 2px solid salmon;
+    text-align: right;
+}
+
+
