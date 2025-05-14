@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+}
+
+main{   
+    background: linear-gradient(120deg,rgba(88, 171, 219, 0.8) 0%, rgba(135, 222, 173, 0.8) 62%);
+    font-family: "Montserrat", sans-serif;
+    height: auto;
+}
+
+h2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bordesCarrito{
+    max-width: 1200px;
+    border: 2px solid black;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.interiorCarrito{
+    position: relative;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.cuadrosProductoPago{
+    border: 2px solid yellowgreen;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.guiaPedido{
+    display: flex;
+    flex-direction: row;
+    gap: 11em;
+    font-style: italic;
+    font-weight: 550;
+    color: rgb(77, 77, 77);
+}
+
+.cuadroProducto{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.cuadroProducto img{
+    width: 10px;
+    height: auto;
+}
+
+.cuadroPago{
+    width: 25em;
+    height: 35em;
+    
+    border: 2px solid orange;
+}
