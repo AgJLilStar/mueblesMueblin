@@ -1,5 +1,10 @@
-body{
-    margin: 0;
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 /*HEADER*/
 header{
@@ -97,7 +102,7 @@ header{
     transition: linear 0.2s;
 }
 
-/*NAVBAR*/
+
 nav{
     background: linear-gradient(5deg, rgb(23, 94, 134) 0%, hsla(176, 45%, 66%, 1) 100%);
     height: 35px;
@@ -152,182 +157,84 @@ nav a{
     border-radius: 8px;
 }
 
-main{
-    background: linear-gradient(120deg,rgba(88, 171, 219, 0.8) 0%, rgba(135, 222, 173, 0.8) 62%);
-    font-family: "Montserrat", sans-serif;
+/*FORM*/
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 110px;
+  min-height: 50vh;
+  background: linear-gradient(120deg,rgba(88, 171, 219, 0.8) 0%, rgba(135, 222, 173, 0.8) 62%);
 }
 
-.interiorMain{
-    max-width: 1350px;
-    height: 2000px;
-    margin: 0 auto;
-    padding: 15px;
-    /*border: 2px solid #000;*/
+.form-container {
+  background-color: #f2f2f2;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  width: 400px;
+  border: 2px solid #999;
+  text-align: center;
+  padding-top: 50px;
 }
 
-.promo{
-    display: flex;
-    justify-content: center;
- }
-
-.fotoPromo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20em;
-    width: 77em;
-    margin-top: 0.em;
-    border-radius: 1em;
-    box-shadow: 2px 2px 0.6em rgba(0,0,0,0.5);
-    transition: linear 0.25s;
+.form-container h2 {
+  margin-bottom: 20px;
+  margin-top:0px;
 }
 
-.fotoPromo:hover{
-    transform: scale(1.05);
-    transition: linear 0.2s;
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.fotoPromo:active{
-    transform: scale(0.97);
-    transition: linear 0.3s;
+.form-container label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
 }
 
-
-.titulo1{
-    display: flex;
-    width: fit-content;
-    padding: 4px 12px;
-    margin-left: 4.5em;    
-    margin-top: 3em;
-    background-color: #c9edff;
-    border-radius:  2em;
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
-.carrousel1{
-    display: flex;
-    gap: 2em;
-    justify-content: center;
-    flex-wrap: wrap;
+.form-container button {
+  background-color: #f5fdd8;
+  border: 1px solid #ccc;
+  padding: 12px;
+  width: 100%;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.items{
-    max-width: 600px;    
-    max-height: 500px;
-    overflow: hidden;
-    border-radius: 2em;
+.form-container button:hover {
+  background-color: #e7f0b3;
 }
 
-.imagen1, .imagen2{
-    position: relative;
+.links {
+  margin: 15px 0;
+  font-size: 1em;
+    color:#000;
 }
 
-.fotoItem1, .fotoItem2{
-    width: 550px;
-    height: 350px;
-    transition: transform 0.6s;
-}
-.textoItem1, .textoItem2{
-    position: absolute;
-    font-weight: bold;
-    bottom: 0px;
-    left: 200px;
-    text-decoration: none;
-    color: black;
-    background-color: #c9edff;
-    border-radius: 2em;
-    padding: 0.5em;
+.links a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 20px;
 }
 
+/*FOOTER*/
 
-.fotoItem1:hover{
-    transform: scale(120%);
-    transition: linear 0.5s;
-}
-.fotoItem1:hover + .textoItem1{
-    box-shadow: 2px 2px 2.5em white;
-}
-
-.fotoItem2:hover{
-    transform: scale(120%);
-    transition: linear 0.5s;
-}
-.fotoItem2:hover + .textoItem2{
-    box-shadow: 2px 2px 2.5em white;
-}
-
-.redireccionLiving{
-    display: flex;
-    margin-top: -40px;
-}
-
-
-.notacarrouselPagos{
-    display: flex;
-    justify-content: center;
-    margin-top: 2em;
-    font-style: italic;
-    font-weight: bolder;
-    font-size: 1.3em;
-}
-
-.fullCarrouselpagos{
-    transition: transform 0.25s;
-}
-
-.fullCarrouselpagos:hover{
-    transform: scale(110%);
-    transition: transform 0.25s;
-    filter: drop-shadow(2px 2px 2px white);
-}
-
-.carrouselPagos{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 2em;
-    gap: 5em;
-    transform: scale(110%);
-    transition: transform 0.25s;
-}
-
-.logoMp{
-    width: 6.5em;
-    margin-bottom: -0.2em;
-}
-
-.conversionDivisa{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    gap: 0em;
-    color: black;
-}
-
-.logoTarjetas{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    gap: 0.5em;
-    color: black;
-}
-
-.carrouselPagos:hover{
-    transform: scale(120%);
-    transition: linear 0.3s;
-}
-
-
-.titulo2{
-    display: flex;
-    width: fit-content;
-    padding: 4px 12px;
-    margin-left: 4.5em;    
-    margin-top: 3em;
-    background-color: #c9edff;
-    border-radius:  2em;
-}
-
-/*----------FOOTER----------*/
 footer{
     background-color: black;
     margin: 0;
