@@ -53,6 +53,8 @@
     <main>
         <div class="bordesCarrito">
 
+            <h1>Tu carrito</h1>
+
             <div class="divisionCarrito">
 
                 <section class="recuadroCarrito">
@@ -60,7 +62,7 @@
                     <table class="tablaCarrito">
                         <thead>
                             <tr>
-                                <th></th>
+                                <th class="columnaBorrar"></th>
                                 <th>PRODUCTO</th>
                                 <th>PRECIO</th>
                                 <th>CANTIDAD</th>
@@ -71,21 +73,23 @@
                         <tbody>
                             <tr>
                                 <td><button id="borrarElemento"><img src="svg/cruz.svg" alt=""></button></td>
-                                <td><img src="fotos/cama.jpg" alt="fotoProducto">Item 1</td>
+                                <td ><div class="productoCarro"><img src="fotos/cama.jpg" alt="fotoProducto"><span>Nombre de item</span></td></div>
                                 <td>Precio</td>
                                 <td><input type="number" class="cantidadElementos" id="cantidadProducto" name="cantidad" min="1" ></td></td>
                                 <td>Subtotal</td>
                             </tr>
+
                             <tr>
                                 <td><button id="borrarElemento"><img src="svg/cruz.svg" alt=""></button></td>   
-                                <td><img src="" alt="fotoProducto">Item 1</td>
+                                <td><div class="productoCarro"><img src="" alt="fotoProducto"><span>Nombre de item</span></td></div>                                
                                 <td>Precio</td>
                                 <td><input type="number" class="cantidadElementos" id="cantidadProducto" name="cantidad" min="1" ></td></td>
                                 <td>Subtotal</td>
                             </tr>
+
                             <tr>
                                 <td><button id="borrarElemento"><img src="svg/cruz.svg" alt=""></button></td>
-                                <td><img src="" alt="">Item 1</td>
+                                <td><div class="productoCarro"><img src="" alt="fotoProducto"><span>Nombre de item</span></td></div>                               
                                 <td>Precio</td>
                                 <td><input type="number" class="cantidadElementos" id="cantidadProducto" name="cantidad" min="1" ></td></td>
                                 <td>Subtotal</td>
@@ -99,12 +103,9 @@
                 </section>
 
                 <section class="recuadroResumen">
-
+                        <h3>Resumen</h3>
+                        <hr>
                     <table class="tablaResumen">
-
-                        <tr>
-                            <h3>Resumen</h3>
-                        </tr>
 
                         <tr>
                             <th>Subtotal:</th>
