@@ -1,36 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Registro</title>
-    <link rel="stylesheet" href="css/Registrate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Producto</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="css/producto.css">
+    <!-- fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    
     <header> 
+
         <div class="entradaTexto">
             <input class="campoEntrada" type="text" name="" id="" placeholder="¿Que estas buscando?">
         </div>
+
         <div class="logo">
         <a href=""><img src="fotos/logoMuebles.png" alt="logoMueblesMueblin" class="logoMarca"></a>    
         </div>
-        <div class ="cuenta">
+
+        <div class ="cuenta">    
+            
             <div class="inicioSesion">
                 <a href="" > <img src="fotos/usuario.png" alt="usuario" class="logoUsuario"> </a>
-                    <!---<div class="textoInicio">   
+                    <div class="textoInicio">   
                         <a href="" class="inicioPalabra"><p class="palabraInicio">Hola!</p></a>
                         <a class="palabraInicio" href="">Iniciá sesión/registrate</a>
-                    </div> -->
+                    </div> 
             </div>
+
             <div class="carrito">           
                 <a href="" > <img src="fotos/carrito.png" alt="usuario" class="botonCarrito"> </a>
                 <a class="wordCarrito" href="">Carrito</a>
             </div> 
+        
         </div>
     </header>
 
@@ -42,38 +50,60 @@
             <a href="" class="botonesNav">Mesas</a>            
             <a href="" class="botonesNav">Camas</a>            
             <a href="" class="botonesNav">Escritorios</a>     
-            <a href="" class="botonesNav">SIllones</a>                   
+            <a href="" class="botonesNav">Sillones</a>                   
         </div>
     </nav>
 
-    <div class="main-container">
-        <div class="form-container">
-            <h2>Registrate</h2>
-            <form id="registroForm">
-            <label for="nombre"><strong>Nombre:</strong></label>
-            <input type="text" id="nombre" placeholder="Nombre del Usuario">
+        <main>
 
-            <label for="apellido"><strong>Apellido:</strong></label>
-            <input type="text" id="apellido" placeholder="Apellido del Usuario">
+        <section class="recuadroItem">
 
-            <label for="correo"><strong>Correo electrónico:</strong></label>
-            <input type="email" id="correo" placeholder="Correo Electrónico">
+            <div class="cuadroInternoItem">
+    
+                <article class="item">
+                    <img src="fotos/mesaModernapng.png" alt="Mesa de living" id="imagenProducto">
+                    <h3>Detalles del producto</h3>
+                    <hr>
+                    <span id="descripcionProducto">Dale estilo y calidez a tu espacio con esta mesa de living de diseño moderno. 
+                    Ideal para reuniones, decoración o simplemente para disfrutar de tus momentos de relax, 
+                    combina perfectamente con distintos estilos de decoración gracias a su diseño versátil. 
+                    Fabricada con materiales de alta calidad que aseguran durabilidad y resistencia, 
+                    esta mesa es el complemento ideal para tu hogar.</span>
+                </article>
 
-            <label for="contrasena"><strong>Contraseña:</strong></label>
-            <input type="password" id="contrasena" placeholder="Contraseña">
+                <article class="infoItem">
 
-            <label for="confirmar"><strong>Confirmar Contraseña:</strong></label>
-            <input type="password" id="confirmar" placeholder="Confirmar su contraseña">
+                    <section class="interiorInfoitem">
+                        <h2 id="nombreItem">Mesa de living</h2>
+                        <p>Marca: Genérica</p>
+                        <h1>$250.000</h1>
+                        <div class="campoCantidad">
+                            <button onclick="decrementar()" id="botonMenos">-</button>
+                            <input type="number" name="" id="cantidadProducto">
+                            <button onclick="incrementar()" id="botonMas">+</button>
+                        </div>
 
-            <button type="submit">CONFIRMAR Y REGISTRARSE</button>
-            </form>
-        </div>
-    </div>
+                        <button id="comprarAhora">
+                            <h3>Comprar ahora</h3>
+                        </button>
+                        <button id="agregarAlcarrito">
+                            <h4>Agregar al carrito</h4>
+                        </button>
 
-<script src="javascript/Registro.js"></script>
+                    </section>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
 
     <footer>
+
         <div class="columnasFooter">
+
             <div class="columna1">
                 <h3>¿Donde nos encuentras?</h3>
                 <a href= "https://maps.app.goo.gl/sGyiKg82K8Acb5pE6" class="textoFotofooter"><img src="svg/googleMaps.svg" alt="ubicación">Catamarca 147 Mendoza, Argentina</a>
@@ -97,7 +127,9 @@
                     <li><a href="">+54 9 2612 31-5124</a></li>
                 </ul>
             </div>
+
         </div>
+
     </footer>
 </body>
 </html>
