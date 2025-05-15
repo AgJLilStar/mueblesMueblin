@@ -377,3 +377,11 @@ footer img{
     display: grid;
     gap: 15px
 }
+a[href="login.html"]{
+    text-decoration: none;
+    color: black;
+}
+a[href="carrito.html"]{
+    text-decoration: none;
+    color: black;
+}
