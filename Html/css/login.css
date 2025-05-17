@@ -57,8 +57,8 @@ header{
 .cuenta{
     position: relative;
     display: flex;
-    right: -600px ;
-    gap: 80px;
+    right: -580px ;
+    gap: 10em;
 }
 
 .inicioSesion, .carrito{
@@ -216,32 +216,18 @@ nav a{
 }
 
 .links {
-  margin: 15px 0;
-  font-size: 1em;
-    color:#000;
+  margin-top: 17px 0;
+  margin-bottom: 25px;
+  font-size: 0.95em;
 }
 
-.links  {
-  text-decoration: none;
-  color: #333;
-  
-  
-}
-a[href="recuperacionContrasena.html"]{
-    text-decoration: none;
-    color: black;
-}
-a[href="Registrate.html"]{
-    text-decoration: none;
-    color: black;
-}
 a[href="carrito.html"]{
     text-decoration: none;
     color: black;
 }
 
-/*FOOTER*/
 
+/*FOOTER*/
 footer{
     background-color: black;
     margin: 0;
