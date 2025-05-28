@@ -31,4 +31,42 @@ document.addEventListener("DOMContentLoaded", function () {
       inicioSesionDiv.appendChild(logoutBtn);
     }
   }
+Brun0
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const menuButton = document.getElementById("menuButton");
+  const mainMenu = document.getElementById("mainMenu");
+
+  menuButton.addEventListener("click", () => {
+    mainMenu.style.display = mainMenu.style.display === "block" ? "none" : "block";
+  });
+
+  // Submenús (Living y Habitación)
+  const toggles = document.querySelectorAll(".submenu-toggle span");
+
+  toggles.forEach(toggle => {
+    toggle.addEventListener("click", (e) => {
+      const submenu = toggle.nextElementSibling;
+
+      // Cierra otros submenús
+      document.querySelectorAll(".submenu").forEach(other => {
+        if (other !== submenu) {
+          other.style.display = "none";
+        }
+      });
+
+      submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+
+      e.stopPropagation(); // Evita que se cierre el menú principal
+    });
+  });
+
+  // Cerrar todo si hacés clic fuera del menú
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".menu-container")) {
+      mainMenu.style.display = "none";
+      document.querySelectorAll(".submenu").forEach(sub => sub.style.display = "none");
+    }
+  });
+ main
 });
