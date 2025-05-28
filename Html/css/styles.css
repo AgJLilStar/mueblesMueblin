@@ -159,7 +159,7 @@ main{
 
 .interiorMain{
     max-width: 1350px;
-    height: 2000px;
+    height: auto;
     margin: 0 auto;
     padding: 15px;
     /*border: 2px solid #000;*/
@@ -376,4 +376,12 @@ footer img{
     margin: 0;
     display: grid;
     gap: 15px
+}
+a[href="login.html"]{
+    text-decoration: none;
+    color: black;
+}
+a[href="carrito.html"]{
+    text-decoration: none;
+    color: black;
 }

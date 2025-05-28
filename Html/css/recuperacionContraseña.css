@@ -57,8 +57,13 @@ header{
 .cuenta{
     position: relative;
     display: flex;
-    right: -600px ;
-    gap: 80px;
+    right: -580px ;
+    gap: 10em;
+}
+
+.wordCarrito{
+    text-decoration: none;
+    color: black;
 }
 
 .inicioSesion, .carrito{

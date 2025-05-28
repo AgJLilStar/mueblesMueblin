@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
       inicioSesionDiv.appendChild(logoutBtn);
     }
   }
+Brun0
 });
 document.addEventListener("DOMContentLoaded", () => {
   const menuButton = document.getElementById("menuButton");
@@ -67,4 +68,5 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll(".submenu").forEach(sub => sub.style.display = "none");
     }
   });
+ main
 });

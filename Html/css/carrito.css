@@ -1,63 +1,189 @@
-body{
+body, html{
     margin: 0;
+    height: 100%;
 }
 
 main{   
     background: linear-gradient(120deg,rgba(88, 171, 219, 0.8) 0%, rgba(135, 222, 173, 0.8) 62%);
     font-family: "Montserrat", sans-serif;
     height: auto;
+    height: 100%;
 }
 
-h2{
+
+h1{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 0;
 }
 
 .bordesCarrito{
-    max-width: 1200px;
-    border: 2px solid black;
-    padding: 15px;
+    max-width: 1500px;
+    /* border: 2px solid black; */
     margin: 0 auto;
+    padding-top: 3em;
+    padding-bottom: 2em ;
 }
 
-.interiorCarrito{
-    position: relative;
-    margin-top: 1em;
+.divisionCarrito{
     display: flex;
-    flex-direction: column;
+    margin-top: 4em;
 }
 
-.cuadrosProductoPago{
-    border: 2px solid yellowgreen;
-    display:flex;
-    justify-content: space-between;
-    align-items: flex-start;
+/*TABLA CARRITO*/
+.recuadroCarrito{
+    /* border: 2px solid white;  */
+    width: 1000px;
 }
 
-.guiaPedido{
+.tablaCarrito{
+    width: 100%;
+    /* border: 2px solid pink; */
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.tablaCarrito th{
+    /*border: 2px solid green;*/
+    line-height: 3em;
+    border-bottom: 3px solid gray;
+    border-inline-end: 2px;
+    border-width: 0.15em;
+    text-align: left;
+}
+
+.tablaCarrito td{
+    /*border: 2px solid purple;*/
+    line-height: 3em;
+    border-bottom: 1.5px solid lightgray;
+    min-height: 1em;
+    padding: 1em;
+    text-align: left;
+}
+.cantidadElementos{
+    width: 4em;
+}
+
+.columnaBorrar{
+    width: 0px;
+}
+
+.productoCarro{
+    /* border: 2px solid red; */
     display: flex;
-    flex-direction: row;
-    gap: 11em;
-    font-style: italic;
-    font-weight: 550;
-    color: rgb(77, 77, 77);
+    align-items: center;
+    gap: 5px;
+    max-width: 100%;
 }
-
-.cuadroProducto{
-    border: 2px solid red;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-}
-
-.cuadroProducto img{
-    width: 10px;
+.productoCarro img{
+    width: 110px;
     height: auto;
+    flex-shrink: 0;
 }
 
-.cuadroPago{
-    width: 25em;
-    height: 35em;
-    
-    border: 2px solid orange;
+.productoCarro span{
+    flex-grow: 1;
+    white-space: normal;
+    word-break: break-word;
+    line-height: ;
+}
+
+/*TABLA RESUMEN*/
+.recuadroResumen{
+    /* border: 2px solid greenyellow; */
+    width: 400px;
+    height: auto;
+    margin-left: 2em;
+    border: 2px solid black;
+    padding: 1.5em;
+    border-radius: 28px;
+}
+
+.recuadroResumen hr{
+    background-color: gray;
+    border: none;
+    height: 2px;
+}
+
+.recuadroResumen h3{
+    text-align: center;
+}
+
+.recuadroResumen li{
+    list-style: none;
+}
+
+.tablaResumen{
+    border-collapse: collapse;
+    width: 100%;
+    font-size: large;
+}
+
+.tablaResumen th{
+    text-align: left;
+    /* border: 2px solid brown; */
+    width: 100px;
+}
+
+.tablaResumen td{
+    /* border: 2px solid salmon; */
+    text-align: right;
+}
+.tablaResumen li{
+    margin-bottom: 0.7em;
+} 
+
+#borrarElemento{
+    background-color: transparent;
+    border: none;
+}
+
+#borrarElemento img{
+    width: 30px;
+    display: flex;
+    margin-top: 1em;
+    filter: invert(100%);
+}
+
+#borrarElemento:hover{
+    transform: scale(120%);
+    cursor: grab;
+}
+
+.logoCesto{
+    width: 2.4em;
+}
+
+#botonVaciarCarro{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    margin-top: 1em ;
+    transition: transform 0.2s;
+}
+#botonVaciarCarro:hover{
+    transform: scale(105%);
+    transition: linear 0.2s;
+}  
+
+#botonPasopago{
+    width: 100%;
+    height: 3em;
+    border-radius: 16px;
+    border: none;
+    background-color: #e7f0b3;
+    margin-top: 2em;
+    font-size: medium;
+    cursor:grabbing;
+    transition: transform 0.1s;
+}
+
+#botonPasopago:hover{
+    transform: scale(105%);
+    transition: linear 0.1s;
+}
+a[href="carrito.html"]{
+    text-decoration: none;
+    color:black;
 }

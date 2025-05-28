@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="index.html">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/carrito.css">
+    <!-- fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
      
@@ -17,22 +21,22 @@
         </div>
 
         <div class="logo">
-        <a href=""><img src="fotos/logoMuebles.png" alt="logoMueblesMueblin" class="logoMarca"></a>    
+        <a href="index.html"><img src="fotos/logoMuebles.png" alt="logoMueblesMueblin" class="logoMarca"></a>    
         </div>
 
         <div class ="cuenta">    
             
             <div class="inicioSesion">
-                <a href="" > <img src="fotos/usuario.png" alt="usuario" class="logoUsuario"> </a>
+                <a href="login.html" > <img src="fotos/usuario.png" alt="usuario" class="logoUsuario"> </a>
                     <div class="textoInicio">   
-                        <a href="" class="inicioPalabra"><p class="palabraInicio">Hola!</p></a>
-                        <a class="palabraInicio" href="">Iniciá sesión/registrate</a>
+                        <a href="login.html" class="inicioPalabra"><p class="palabraInicio">Hola!</p></a>
+                        <a href="login.html" class="palabraInicio" href="">Iniciá sesión/registrate</a>
                     </div> 
             </div>
 
             <div class="carrito">           
-                <a href="" > <img src="fotos/carrito.png" alt="usuario" class="botonCarrito"> </a>
-                <a class="wordCarrito" href="">Carrito</a>
+                <a> <img src="fotos/carrito.png" alt="usuario" class="botonCarrito"></a>
+                <a href="carrito.html" class="wordCarrito" href="">Carrito</a>
             </div> 
         
         </div>
@@ -42,47 +46,96 @@
         <div class="botones">
             <button class="botonMenu"><img src="svg/menu.svg" width="25px" alt="logoMenu" class="svgMenu"><b><i>MENÚ</b></i></button>
             <a href="" class="botonesNav"><i>¡Ofertas!</i></a>            
-            <a href="" class="botonesNav">Sillas</a>            
-            <a href="" class="botonesNav">Mesas</a>            
+            <a href="catalogo.html" class="botonesNav">Sillas</a>            
+            <a href="producto.html" class="botonesNav">Mesas</a>            
             <a href="" class="botonesNav">Camas</a>            
             <a href="" class="botonesNav">Escritorios</a>     
             <a href="" class="botonesNav">Sillones</a>                   
         </div>
     </nav>
 
-
     <main>
-
         <div class="bordesCarrito">
 
-            <h2>Carrito</h2>
+            <h1>Tu carrito</h1>
 
-            <div class="interiorCarrito">
-                <div class="guiaPedido">
-                    <p>Producto</p>
-                    <p>Precio</p>
-                    <p>Cantidad</p>
-                    <p>Subtotal</p>
-                </div>
+            <div class="divisionCarrito">
 
-                <div class="cuadrosProductoPago">
-                    <div class="cuadroProducto">
-                        <img src="" alt="fotoProducto"><a href="">Item 1</a>
-                        <img src="" alt="fotoProducto"><a href="">Item 2</a>
-                        <img src="" alt="fotoProducto"><a href="">Item 3</a>
-                        <img src="" alt="fotoProducto"><a href="">Item 4</a>
-                        <img src="" alt="fotoProducto"><a href="">Item 5</a>
-                        <img src="" alt="fotoProducto"><a href="">Item 6</a>
-                    </div>
-                    <div class="cuadroPago">
-                        AQUI VA EL PAGO
-                    </div>
-                </div>
+                <section class="recuadroCarrito">
+
+                    <table class="tablaCarrito">
+                        <thead>
+                            <tr>
+                                <th class="columnaBorrar"></th>
+                                <th>PRODUCTO</th>
+                                <th>PRECIO</th>
+                                <th>CANTIDAD</th>
+                                <th>SUBTOTAL</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><button id="borrarElemento"><img src="svg/cruz.svg" alt=""></button></td>
+                                <td ><div class="productoCarro"><img src="fotos/cama.jpg" alt="fotoProducto"><span>Nombre de item</span></td></div>
+                                <td>Precio</td>
+                                <td><input type="number" class="cantidadElementos" id="cantidadProducto" name="cantidad" min="1" ></td></td>
+                                <td>Subtotal</td>
+                            </tr>
+
+                            <tr>
+                                <td><button id="borrarElemento"><img src="svg/cruz.svg" alt=""></button></td>   
+                                <td><div class="productoCarro"><img src="" alt="fotoProducto"><span>Nombre de item</span></td></div>                                
+                                <td>Precio</td>
+                                <td><input type="number" class="cantidadElementos" id="cantidadProducto" name="cantidad" min="1" ></td></td>
+                                <td>Subtotal</td>
+                            </tr>
+
+                            <tr>
+                                <td><button id="borrarElemento"><img src="svg/cruz.svg" alt=""></button></td>
+                                <td><div class="productoCarro"><img src="" alt="fotoProducto"><span>Nombre de item</span></td></div>                               
+                                <td>Precio</td>
+                                <td><input type="number" class="cantidadElementos" id="cantidadProducto" name="cantidad" min="1" ></td></td>
+                                <td>Subtotal</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+
+                    <button id="botonVaciarCarro"><img src="svg/trash.svg" alt="Vaciar Carrito" class="logoCesto">Vaciar el carrito</button>
+                
+                </section>
+
+                <section class="recuadroResumen">
+                        <h3>Resumen</h3>
+                        <hr>
+                    <table class="tablaResumen">
+
+                        <tr>
+                            <th>Subtotal:</th>
+                            <td><p id="subtotalCarrito">10 peso</p></td>
+                        </tr>
+                        
+                        <tr>
+                            <th>Envío</th>
+                            <td>
+                                <ul>
+                                    <li><input type="checkbox" name="selectorEnvio" id="selectorEnvio">Retiro por sucursal <a href="https://maps.app.goo.gl/sGyiKg82K8Acb5pE6">¿Donde nos encuentras?</a></li>
+                                    <li><input type="checkbox" name="selectorEnvio" id="selectorEnvio">Envio mediante correo</li>
+                                </ul
+                            ></td>
+                        </tr>
+                    </table>
+
+                        <button id="botonPasopago">PROCEDER AL PAGO</button>
+                
+                </section>
+
             </div>
-        </div>
- 
-    </main>
 
+        </div>
+
+    </main>
 
     <footer>
 
