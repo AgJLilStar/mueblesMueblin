@@ -101,14 +101,21 @@ header{
   position: relative;
 }
 
+
+/* BOTÓN PRINCIPAL "MENÚ" */
+.menu-container {
+  position: relative;
+}
+
 /* BOTÓN PRINCIPAL "MENÚ" */
 #menuButton {
   background-color: transparent;
-  border: none;
+  border: 1px solid black;
   color: black;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   margin: 3px;
+  padding: 5px 10px;
   display: flex;
   align-items: center;
   gap: 3px;
@@ -123,45 +130,45 @@ header{
 
 /* MENÚ DESPLEGABLE PRINCIPAL */
 .menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 6px;
-    padding: 5px 0;
-    z-index: 100;
-    animation: fadeIn 0.3s ease-in-out;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  z-index: 100;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* TÍTULOS "Living" y "Habitación" */
 .submenu-toggle {
   position: relative;
+  cursor: pointer;
+}
+
+.submenu-toggle span {
+  display: block;
   padding: 8px 15px;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   color: black;
-  cursor: pointer;
-  white-space: nowrap;
-  list-style: none; /* Quita círculos */
+  border-radius: 6px;
 }
 
-/* QUITA CÍRCULOS AÚN SI USA UL/LI */
-.submenu-toggle span {
-  list-style-type: none;
-  display: block;
-}
-
-/* EFECTO HOVER */
-.submenu-toggle:hover {
+.submenu-toggle span:hover {
   background-color: #c9edff;
-  border-radius: 5px;
 }
 
-/* SUBMENÚ (mesas, sillas, etc.) */
+/* SUBMENÚS (Mesas, Sillas, etc.) */
 .submenu {
   display: none;
   position: absolute;
@@ -170,15 +177,14 @@ header{
   background-color: white;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border-radius: 6px;
-  min-width: 120px;
-  z-index: 100;
+  min-width: 140px;
   animation: fadeIn 0.3s ease-in-out;
+  padding: 5px 0;
 }
 
 .submenu li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .submenu a {
@@ -188,13 +194,13 @@ header{
   font-size: 14px;
   text-decoration: none;
   color: black;
-  
 }
 
 .submenu a:hover {
   background-color: #c9edff;
   border-radius: 5px;
 }
+
 
 /* ANIMACIÓN TIPO FADE */
 @keyframes fadeIn {
@@ -207,11 +213,15 @@ header{
     transform: scaleY(1);
   }
 }
+
 /*NAVBAR*/
-/*
+
 nav{
     background: linear-gradient(5deg, rgb(23, 94, 134) 0%, hsla(176, 45%, 66%, 1) 100%);
     height: 35px;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 nav button,
@@ -220,33 +230,7 @@ nav a{
     font-size: 15px;
 }
 
-.botones{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
-}
-
-.botonMenu{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 3px;
-    gap: 3px;
-    background-color: transparent;
-    border: none;
-    font-size: 18px;
-}
-
-.botonMenu:hover{
-    transform: scale(110%);
-    transition:linear 0.2s;
-    cursor:grab;
-    filter:drop-shadow(0px 0px 10px #c9edff);
-}
-
 .botonesNav{
-    display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
@@ -262,7 +246,9 @@ nav a{
     padding: 2px;
     border-radius: 8px;
 }
-*/
+
+
+/*   */
 main{
     background: linear-gradient(120deg,rgba(88, 171, 219, 0.8) 0%, rgba(135, 222, 173, 0.8) 62%);
     font-family: "Montserrat", sans-serif;

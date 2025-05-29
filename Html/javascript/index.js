@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
       nombreSpan.textContent = usuario;
       nombreSpan.style.color = "black";
       nombreSpan.style.marginRight = "10px";
-
       // Botón de cerrar sesión MODIFICARLO
       const logoutBtn = document.createElement("button");
       logoutBtn.textContent = "Cerrar sesión";
