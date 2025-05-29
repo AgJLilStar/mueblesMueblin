@@ -36,6 +36,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuButton = document.getElementById("menuButton");
   const mainMenu = document.getElementById("mainMenu");
 
+  mainMenu.style.display = "none";
+  document.querySelectorAll(".submenu").forEach(sub => {
+    sub.style.display = "none";
+  });
+
   menuButton.addEventListener("click", () => {
     mainMenu.style.display = mainMenu.style.display === "block" ? "none" : "block";
   });
