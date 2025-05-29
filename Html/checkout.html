@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/carrito.css">
     <link rel="stylesheet" href="css/checkout.css">
+    <script src="javascript/index.js"></script>
 </head>
 <body>
     
@@ -39,16 +40,41 @@
         
         </header>
 
-    <nav>
-        <div class="botones">
-            <button class="botonMenu"><img src="svg/menu.svg" width="25px" alt="logoMenu" class="svgMenu"><b><i>MENÚ</b></i></button>
-            <a href="" class="botonesNav"><i>¡Ofertas!</i></a>            
-            <a href="catalogo.html" class="botonesNav">Sillas</a>            
-            <a href="producto.html" class="botonesNav">Mesas</a>            
-            <a href="" class="botonesNav">Camas</a>            
-            <a href="" class="botonesNav">Escritorios</a>     
-            <a href="" class="botonesNav">Sillones</a>                   
-        </div>
+   <nav>
+
+            <div class="botonesCategorias">
+
+                <div class="menu-container">
+                    <button id="menuButton">MENÚ▾</button>
+
+                        <ul class="menu" id="mainMenu">
+
+                            <li class="submenu-toggle">
+                                <span>Living ▸</span>
+                                    <ul class="submenu">
+                                        <li><a href="#">Mesas</a></li>
+                                        <li><a href="#">Sillas</a></li>
+                                        <li><a href="#">Sillones</a></li>
+                                    </ul>
+                            </li>
+
+                            <li class="submenu-toggle">
+                                <span>Habitación ▸</span>
+                                    <ul class="submenu">
+                                        <li><a href="#">Cama</a></li>
+                                        <li><a href="#">Escritorio</a></li>
+                                    </ul>
+                            </li>
+                        </ul>
+                </div>
+
+                <a href="" class="botonesNav"><i>¡Ofertas!</i></a>            
+                <a href="catalogo.html" class="botonesNav">Sillas</a>            
+                <a href="producto.html" class="botonesNav">Mesas</a>            
+                <a href="" class="botonesNav">Camas</a>            
+                <a href="" class="botonesNav">Escritorios</a>     
+                <a href="" class="botonesNav">Sillones</a>                   
+            </div>
     </nav>
 
     <main>
